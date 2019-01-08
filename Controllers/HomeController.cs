@@ -12,7 +12,12 @@ namespace PP.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+        products p = new products();
+        {
+            p.a = 111;
+            p.b = "55555";
+             return View(p);
+        }
         }
 
         public IActionResult Privacy()
